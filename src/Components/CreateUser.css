@@ -1,0 +1,36 @@
+.input__form {
+    background-color: white;
+    padding: 20px;
+    margin: 70px auto;
+    border-radius: 20px;
+    width: 400px;
+
+}
+
+.googlebutton {
+    display: block;
+    margin: 5px auto;
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.facebookbutton {
+    display: block;
+    margin: 5px auto;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+.TravelCard {
+    width: 250px;
+    height: 300px;
+    
+    border-radius: 10px;
+    margin: 20px 20px;
+    padding: 20px;
+    background-size: 250px 300px;
+    position: relative;
+    background-position: center;
+    transition: transform 100ms;
+   
+}
+
+.TravelCard:hover {
+    cursor: pointer;
+    border: 4px solid orange;
+    transform: scale(1.06);
+}
+
+.TravelCard > h2 {
+    color: white;
+}
+
+
+.destination {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-weight: bold;
+}
