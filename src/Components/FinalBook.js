@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './FinalBook.css';
 import image1 from '../Image/Rectangle 26.png';
 import image2 from '../Image/Rectangle 27.png';
 import image3 from '../Image/Rectangle 28.png';
 import Room from './Room';
+
 
 
 const rooms = [
@@ -53,24 +54,28 @@ const rooms = [
     }
 ]
 
-const FinalBook = () => {
-    return (
-        <div className="FinalBook">
-            
-            <div className="rooms">
+class FinalBook extends Component  {
+    render () {
+        return (
+            <div className="FinalBook">
+    
+                <div className="rooms">
+    
+                    {
+                        rooms.map(room => <Room key={room.id} room={room} />)
+                    }
+    
+                </div>
+    
+                <div className="map">
 
-                {
-                    rooms.map(room => <Room key={room.id} room={room} />)
-                }
-
+                </div>
+    
             </div>
-
-            <div className="map">
-                    <h1>Google maps api here</h1>
-            </div>
-
-        </div>
-    );
+        );
+    }
 };
+
+
 
 export default FinalBook;

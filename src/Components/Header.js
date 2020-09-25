@@ -52,7 +52,7 @@ const Header = () => {
                         <Nav.Link href="#blog">Blog</Nav.Link>
                         <Nav.Link href="#contact">Contact</Nav.Link>
                         {
-                            user.name ? (<div>
+                            user.success ? (<div>
                                 <p>{user.name}</p>
                                 <Nav.Link onClick={handleSignOut} className="btn btn-warning">Logout</Nav.Link>
                             </div>) : (

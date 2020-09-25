@@ -120,6 +120,7 @@ const CreateUser = () => {
               .then(() => {
                 const newUserInfo = { ...user };
                 newUserInfo.error = "";
+                newUserInfo.success = true;
                
                 setUser(newUserInfo);
       
@@ -161,7 +162,7 @@ const CreateUser = () => {
 
     return (
         <div>
-            <h2 style={{color: 'white'}}>{user.email}</h2>
+            
             
 
             <div className="input__form">
