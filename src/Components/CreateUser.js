@@ -37,7 +37,8 @@ const CreateUser = () => {
                     const signedInUser = {
                         isSignedIn: true,
                         name: displayName,
-                        email: email
+                        email: email,
+                        success: true
                     }
 
                     setUser(signedInUser);
